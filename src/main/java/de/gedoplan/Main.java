@@ -11,5 +11,6 @@ public class Main
     
     System.out.println(calculator.addieren(2, 3));
     System.out.println(calculator.subtrahieren(2, 3));
+    System.out.println(calculator.multiplizieren(2, 3));
   }
 }

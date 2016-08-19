@@ -11,10 +11,10 @@
 				<artifactId>jgitflow-maven-plugin</artifactId>
 				<version>1.0-m5.1</version>
 				<configuration>
-					<username />
-					<password />
-					<pushFeatures>true</pushFeatures>
-					<pushRelease>true</pushRelease>
+<!-- 					<username /> -->
+<!-- 					<password /> -->
+<!-- 					<pushFeatures>true</pushFeatures> -->
+<!-- 					<pushRelease>true</pushRelease> -->
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>

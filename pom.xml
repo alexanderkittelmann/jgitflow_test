@@ -1,8 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.blacorp</groupId>
 	<artifactId>jgitflow_test</artifactId>
 	<version>1.0.0</version>
+
+	<distributionManagement>
+		<repository>
+			<id>Releases</id>
+			<name>Releases</name>
+			<url>http://http://192.168.56.101:10081/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -11,10 +20,10 @@
 				<artifactId>jgitflow-maven-plugin</artifactId>
 				<version>1.0-m5.1</version>
 				<configuration>
-<!-- 					<username /> -->
-<!-- 					<password /> -->
-<!-- 					<pushFeatures>true</pushFeatures> -->
-<!-- 					<pushRelease>true</pushRelease> -->
+					<!-- <username /> -->
+					<!-- <password /> -->
+					<!-- <pushFeatures>true</pushFeatures> -->
+					<!-- <pushRelease>true</pushRelease> -->
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>

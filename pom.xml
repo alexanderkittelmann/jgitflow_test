@@ -2,7 +2,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.blacorp</groupId>
 	<artifactId>jgitflow_test</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
+
+	<distributionManagement>
+		<repository>
+			<id>Releases</id>
+			<name>Releases</name>
+			<url>http://192.168.56.101:10081/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -11,10 +19,10 @@
 				<artifactId>jgitflow-maven-plugin</artifactId>
 				<version>1.0-m5.1</version>
 				<configuration>
-					<username />
-					<password />
-					<pushFeatures>true</pushFeatures>
-					<pushRelease>true</pushRelease>
+					<!-- <username /> -->
+					<!-- <password /> -->
+					<!-- <pushFeatures>true</pushFeatures> -->
+					<!-- <pushRelease>true</pushRelease> -->
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>

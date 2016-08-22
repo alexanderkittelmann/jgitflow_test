@@ -4,6 +4,8 @@
 	<artifactId>jgitflow_test</artifactId>
 	<version>1.0.2</version>
 
+
+
 	<distributionManagement>
 		<repository>
 			<id>Releases</id>
@@ -21,7 +23,7 @@
 				<configuration>
 					<!-- <username /> -->
 					<!-- <password /> -->
-					<!-- <pushFeatures>true</pushFeatures> -->
+					<pushFeatures>true</pushFeatures>
 					<!-- <pushRelease>true</pushRelease> -->
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>

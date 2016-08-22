@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.blacorp</groupId>
 	<artifactId>jgitflow_test</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0-testfeature_2-SNAPSHOT</version>
 
 	<distributionManagement>
 		<repository>
 			<id>Releases</id>
 			<name>Releases</name>
-			<url>http://192.168.56.101:10081/content/repositories/releases/</url>
+			<url>http://192.168.99.100:10081/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
 

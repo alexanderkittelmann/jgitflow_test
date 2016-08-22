@@ -10,7 +10,7 @@
 		<repository>
 			<id>Releases</id>
 			<name>Releases</name>
-			<url>http://192.168.99.100:1008/content/repositories/releases/</url>
+			<url>http://192.168.99.100:10081/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
 
@@ -23,7 +23,7 @@
 				<configuration>
 					<!-- <username /> -->
 					<!-- <password /> -->
-					<!-- <pushFeatures>true</pushFeatures> -->
+					<pushFeatures>true</pushFeatures>
 					<!-- <pushRelease>true</pushRelease> -->
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>

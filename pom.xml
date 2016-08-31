@@ -25,7 +25,6 @@
 					<!-- <password /> -->
 					<pushFeatures>true</pushFeatures>
 					<pushRelease>true</pushRelease>
-          <enableFeatureVersions>true</enableFeatureVersions>
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>

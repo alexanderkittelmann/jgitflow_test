@@ -24,13 +24,14 @@
 					<!-- <username /> -->
 					<!-- <password /> -->
 					<pushFeatures>true</pushFeatures>
-					<!-- <pushRelease>true</pushRelease> -->
+					<pushRelease>true</pushRelease>
+          <enableFeatureVersions>true</enableFeatureVersions>
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>
-						<featureBranchPrefix>feature/feature-</featureBranchPrefix>
-						<releaseBranchPrefix>release/</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+						<featureBranchPrefix>feature--</featureBranchPrefix>
+						<releaseBranchPrefix>release-</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
 						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
 					</flowInitContext>
 				</configuration>

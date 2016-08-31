@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.blacorp</groupId>
 	<artifactId>jgitflow_test</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4-feature_1-SNAPSHOT</version>
 
 
 
@@ -29,7 +29,7 @@
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>
-						<featureBranchPrefix>feature--</featureBranchPrefix>
+						<featureBranchPrefix>feature-</featureBranchPrefix>
 						<releaseBranchPrefix>release-</releaseBranchPrefix>
 						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
 						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>

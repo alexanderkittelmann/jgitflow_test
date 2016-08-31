@@ -7,7 +7,6 @@
 	<container qualifier="wildfly-remote" default="true">
 		<configuration>
       <property name="managementAddress">wildfly-default.apps.10.2.2.2.xip.io</property>
-      <property name="managementPort"></property>
 		</configuration>
 	</container>
 	

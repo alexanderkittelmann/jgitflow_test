@@ -28,7 +28,7 @@
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>
-						<featureBranchPrefix>feature/</featureBranchPrefix>
+						<featureBranchPrefix>feature/feature-</featureBranchPrefix>
 						<releaseBranchPrefix>release/</releaseBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>

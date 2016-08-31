@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.blacorp</groupId>
 	<artifactId>jgitflow_test</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 
 
 
@@ -10,7 +10,7 @@
 		<repository>
 			<id>Releases</id>
 			<name>Releases</name>
-			<url>http://192.168.56.101:10081/content/repositories/releases/</url>
+			<url>http://nexus3-default.apps.10.2.2.2.xip.io/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 
@@ -24,13 +24,13 @@
 					<!-- <username /> -->
 					<!-- <password /> -->
 					<pushFeatures>true</pushFeatures>
-					<!-- <pushRelease>true</pushRelease> -->
+					<pushRelease>true</pushRelease>
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
 						<developBranchName>develop</developBranchName>
-						<featureBranchPrefix>feature/</featureBranchPrefix>
-						<releaseBranchPrefix>release/</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+						<featureBranchPrefix>feature-</featureBranchPrefix>
+						<releaseBranchPrefix>release-</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
 						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
 					</flowInitContext>
 				</configuration>

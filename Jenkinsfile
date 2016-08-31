@@ -13,8 +13,8 @@ node {
    stage 'Unit Tests'
    sh "${mvnHome}/bin/mvn test -P unittests"
    
-   //stage "Integration Tests"
-   //sh "
+   stage "Integration Tests"
+   sh "${mvnHome}/bin/mvn test -P unittests2"
    
    // Mark the code build 'stage'....
    stage 'Build'

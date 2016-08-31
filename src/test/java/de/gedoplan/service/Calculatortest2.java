@@ -4,19 +4,19 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+public class Calculatortest2 {
 
-public class CalculatorTest {
-  
   private Calculator calculator;
-  
+
   @Before
-  public void setUp() {
+  public void setUp()
+  {
     calculator = new Calculator();
   }
 
   @Test
-  public void testAddieren()
+  public void testDividieren()
   {
-    Assert.assertEquals(calculator.addieren(2, 2).intValue(), 4);
+    Assert.assertEquals(calculator.dividieren(2, 2).intValue(), 1);
   }
 }

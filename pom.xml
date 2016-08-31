@@ -101,7 +101,7 @@
       </build>
     </profile>
     <profile>
-      <id>unittests2</id>
+      <id>integrationstests</id>
       <build>
         <plugins>
           <plugin>

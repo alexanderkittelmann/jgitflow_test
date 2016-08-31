@@ -14,7 +14,7 @@ node {
    sh "${mvnHome}/bin/mvn test -P unittests"
    
    stage "Integration Tests"
-   sh "${mvnHome}/bin/mvn test -P unittests2"
+   sh "${mvnHome}/bin/mvn test -P integrationstests"
    
    // Mark the code build 'stage'....
    stage 'Build'

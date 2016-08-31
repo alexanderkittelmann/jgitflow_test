@@ -11,7 +11,10 @@ node {
    def mvnHome = tool 'M3'
  
    stage 'Unit Tests'
-   sh "${mvnHome}/bin/mvn test"
+   sh "${mvnHome}/bin/mvn test -P unittests"
+   
+   //stage "Integration Tests"
+   //sh "
    
    // Mark the code build 'stage'....
    stage 'Build'

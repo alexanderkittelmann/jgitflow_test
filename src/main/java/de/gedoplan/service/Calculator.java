@@ -16,6 +16,6 @@ public class Calculator
   }
   
   public Integer dividieren(Integer value1, Integer value2) {
-    return value1 / value3;
+    return value1 / value2;
   }
 }

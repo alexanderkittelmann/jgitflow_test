@@ -3,6 +3,7 @@ package de.gedoplan.service;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.UUID;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -22,6 +23,8 @@ import de.gedoplan.Person;
 
 @RunWith(Arquillian.class)
 public class InjectTestTest {
+  
+  private static final String deploymentName = UUID.randomUUID().toString();
 
   @Inject
   private Calculator calculator;
@@ -31,7 +34,7 @@ public class InjectTestTest {
   
   @Deployment
   public static WebArchive createDeployment() {
-    WebArchive webArchive = ShrinkWrap.create(WebArchive.class, "test.war")
+    WebArchive webArchive = ShrinkWrap.create(WebArchive.class, deploymentName+".war")
         .addClasses(InjectTest.class, Calculator.class, InjectTestTest.class);
     Path currentRelativePath = Paths.get("");
     File webXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/webapp/WEB-INF/web.xml");

@@ -35,6 +35,6 @@ public class InjectTestTest {
   @Test
   public void testDividieren()
   {
-    Assert.assertEquals(calculator.dividieren(2, 1).intValue(), 1);
+    Assert.assertEquals(calculator.dividieren(2, 1).intValue(), 2);
   }
 }

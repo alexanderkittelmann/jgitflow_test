@@ -39,6 +39,7 @@ public class InjectTestTest {
     File webXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/webapp/WEB-INF/web.xml");
     webArchive.addAsWebInfResource(webXml);
     File persistenceXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/resources/META-INF/persistence.xml");
+    webArchive.addAsResource(persistenceXml, "/META-INF");
     webArchive.addAsManifestResource(persistenceXml);
     return webArchive;
   }

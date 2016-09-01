@@ -38,8 +38,7 @@ public class InjectTestTest {
     Path currentRelativePath = Paths.get("");
     File webXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/webapp/WEB-INF/web.xml");
     webArchive.addAsWebInfResource(webXml);
-    File persistenceXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/resource/META-INF/persistence.xml");
-    System.out.println(persistenceXml.getAbsoluteFile());
+    File persistenceXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/resources/META-INF/persistence.xml");
     webArchive.addAsManifestResource(persistenceXml);
     return webArchive;
   }

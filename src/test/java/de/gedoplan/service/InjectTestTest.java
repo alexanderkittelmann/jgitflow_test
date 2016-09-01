@@ -35,7 +35,7 @@ public class InjectTestTest {
   @Deployment
   public static WebArchive createDeployment() {
     WebArchive webArchive = ShrinkWrap.create(WebArchive.class, deploymentName+".war")
-        .addClasses(InjectTest.class, Calculator.class, InjectTestTest.class);
+        .addClasses(InjectTest.class, Calculator.class, InjectTestTest.class, Person.class);
     Path currentRelativePath = Paths.get("");
     File webXml = new File(currentRelativePath.toAbsolutePath().toString() + "/src/main/webapp/WEB-INF/web.xml");
     webArchive.addAsWebInfResource(webXml);

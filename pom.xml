@@ -78,6 +78,17 @@
           </flowInitContext>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.wildfly.plugins</groupId>
+        <artifactId>wildfly-maven-plugin</artifactId>
+        <version>${version.wildfly.maven.plugin}</version>
+        <configuration>
+          <hostname>172.17.0.11</hostname>
+          <port>9990</port>
+          <username>admin</username>
+          <password>admin</password>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 

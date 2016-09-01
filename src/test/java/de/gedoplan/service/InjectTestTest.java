@@ -8,7 +8,6 @@ import java.util.UUID;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -51,14 +50,15 @@ public class InjectTestTest {
   }
   
   @Test
-  @Transactional
   public void testPersist() 
   {
     Person person = new Person();
     person.setName("Meier");
     person.setVorname("Hugo");
     
+    entityManager.getTransaction().begin();
     entityManager.persist(person);
+    entityManager.getTransaction().commit();
     
     System.out.println("Hugo_ID: " + person.getId());
     

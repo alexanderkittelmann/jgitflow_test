@@ -6,7 +6,7 @@
 	
 	<container qualifier="wildfly-remote" default="true">
 		<configuration>
-      <property name="managementAddress">localhost</property>
+      <property name="managementAddress">172.17.0.11</property>
       <property name="managementPort">9990</property>
       <property name="username">admin</property>
       <property name="password">admin</property>

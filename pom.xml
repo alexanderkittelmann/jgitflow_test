@@ -123,7 +123,7 @@
             <configuration>
               <skipTests>false</skipTests>
               <includes>
-                <include>InjectTestTest.java</include>
+                <include>ArquillianTest.java</include>
               </includes>
             </configuration>
           </plugin>

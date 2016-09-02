@@ -11,26 +11,26 @@
     transaction-type="JTA">
 
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <jta-data-source>jdbc/pace</jta-data-source>
-    
+    <jta-data-source>jdbc/test2</jta-data-source>
+
     <shared-cache-mode>NONE</shared-cache-mode>
 
     <properties>
       <property
         name="hibernate.hbm2ddl.auto"
-        value="update" />
+        value="create"/>
       <property
         name="hibernate.id.new_generator_mappings"
-        value="true" />
+        value="true"/>
       <property
         name="hibernate.show_sql"
-        value="true" />
+        value="true"/>
       <property
         name="hibernate.dialect"
-        value="org.hibernate.dialect.MySQLDialect" />
+        value="org.hibernate.dialect.MySQLDialect"/>
       <property
         name="hibernate.default_batch_fetch_size"
-        value="8" />
+        value="8"/>
     </properties>
-
+  </persistence-unit>
 </persistence>

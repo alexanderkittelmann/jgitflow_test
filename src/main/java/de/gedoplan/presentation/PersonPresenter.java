@@ -19,7 +19,7 @@ public class PersonPresenter {
 
   public void persist()
   {
-    personRepository.persist(this.person);
+    //personRepository.persist(this.person);
   }
 
   public Person getPerson()

@@ -16,19 +16,22 @@ node {
    sh "${mvnHome}/bin/mvn clean install"
    
    if ("${env.BRANCH_NAME}".contains('feature')) {
-	   	stage 'Unittests'
-	   	sh "${mvnHome}/bin/mvn -P unittests"     
+	   stage 'Unittests'
+	   sh "${mvnHome}/bin/mvn -P unittests test"     
    } else {   
 	   stage 'Integrationstests'
-	   sh "${mvnHome}/bin/mvn -P integrationstests"
+	   sh "${mvnHome}/bin/mvn -P integrationstests test"
 	   
 	   stage 'Kapazitaetstests'
-	   sh "${mvnHome}/bin/mvn -P kapaziaetstests"
-	   
+	   sh "${mvnHome}/bin/mvn -P kapaziaetstests test"
+   }
+	
+    if ("${env.BRANCH_NAME}".contains('release')) {
+	   	  
 	   stage 'Manuelletests'
 	   sh "${mvnHome}/bin/mvn -P manuelletests wildfly:deploy"   
 	   
-	   input message: "Soll die aktuelle Version produktiv gesetzt werd"
+	   input message: "Soll die aktuelle Version produktiv gesetzt werden?"
 	   
 	   stage 'Deploy'
 	   sh "${mvnHome}/bin/mvn wildfly:deploy"

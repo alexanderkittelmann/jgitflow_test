@@ -128,7 +128,7 @@
       </build>
     </profile>
     <profile>
-      <id>kapazitätstest</id>
+      <id>kapazitaetstest</id>
       <build>
         <plugins>
           <plugin>

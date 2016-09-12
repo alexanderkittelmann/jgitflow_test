@@ -27,7 +27,7 @@ node {
    // stage 'Manuelletests'
    // sh "${mvnHome}/bin/mvn -P manuelletests wildfly:deploy"
    
-   if (${env.BRANCH_NAME}.contains('feature')) {
+   if ("${env.BRANCH_NAME}".contains('feature')) {
     println "feature-Branch"
    }
    

@@ -27,6 +27,10 @@ node {
    // stage 'Manuelletests'
    // sh "${mvnHome}/bin/mvn -P manuelletests wildfly:deploy"
    
+   if ($env.BRANCH_NAME.contains('feature')) {
+    println "feature-Branch"
+   }
+   
    input message: "Does Release-Version look good?"
    
    // stage 'Deploy'

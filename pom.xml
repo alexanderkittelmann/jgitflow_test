@@ -62,10 +62,10 @@
         <artifactId>jgitflow-maven-plugin</artifactId>
         <version>1.0-m5.1</version>
         <configuration>
-					<!-- <username /> -->
-					<!-- <password /> -->
-<!--           <pushFeatures>true</pushFeatures> -->
-<!--           <pushRelease>true</pushRelease> -->
+		  <username />
+		  <password />
+          <pushFeatures>true</pushFeatures>
+          <pushRelease>true</pushRelease>
           <flowInitContext>
             <masterBranchName>master</masterBranchName>
             <developBranchName>develop</developBranchName>
@@ -81,7 +81,7 @@
         <artifactId>wildfly-maven-plugin</artifactId>
         <version>1.1.0.Alpha11</version>
         <configuration>
-          <hostname>172.17.0.2</hostname>
+          <hostname>172.30.164.33</hostname>
           <port>9990</port>
           <username>admin</username>
           <password>admin</password>

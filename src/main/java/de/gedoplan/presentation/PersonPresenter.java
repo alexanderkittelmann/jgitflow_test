@@ -14,8 +14,8 @@ public class PersonPresenter {
   @Inject
   Person person;
 
-  @Inject
-  PersonRepository personRepository;
+  // @Inject
+  // PersonRepository personRepository;
 
   public void persist()
   {

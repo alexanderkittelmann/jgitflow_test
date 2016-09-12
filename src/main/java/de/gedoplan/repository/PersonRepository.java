@@ -1,4 +1,4 @@
-package de.gedoplan.repository;
+/* package de.gedoplan.repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,4 +16,4 @@ public class PersonRepository {
   {
     entityManager.persist(person);
   }
-}
+}*/

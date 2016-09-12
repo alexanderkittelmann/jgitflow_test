@@ -15,10 +15,12 @@ node {
    stage 'Build'
    sh "${mvnHome}/bin/mvn clean install"
    
-   if ("${env.BRANCH_NAME}".contains('feature')) {
+   
 	   stage 'Unittests'
-	   sh "${mvnHome}/bin/mvn -P unittests test"     
-   } else {   
+	   sh "${mvnHome}/bin/mvn -P unittests test"  
+
+   if (!"${env.BRANCH_NAME}".contains('feature')) 
+   {      
 	   stage 'Integrationstests'
 	   sh "${mvnHome}/bin/mvn -P integrationstests test"
 	   
@@ -26,7 +28,7 @@ node {
 	   sh "${mvnHome}/bin/mvn -P kapaziaetstests test"
    }
 	
-    if ("${env.BRANCH_NAME}".contains('release')) {
+    if (!"${env.BRANCH_NAME}".contains('feature') && "${env.BRANCH_NAME}".contains('release')) {
 	   	  
 	   stage 'Manuelletests'
 	   sh "${mvnHome}/bin/mvn -P manuelletests wildfly:deploy"   

@@ -15,8 +15,8 @@ node {
    stage 'Build'
    sh "${mvnHome}/bin/mvn clean install"
    
-   stage 'Unittests'
-   sh "${mvnHome}/bin/mvn -P unittests"     
+   #stage 'Unittests'
+   #sh "${mvnHome}/bin/mvn -P unittests"     
    
    #stage 'Integrationstests'
    #sh "${mvnHome}/bin/mvn -P integrationstests"
